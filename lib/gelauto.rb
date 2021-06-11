@@ -70,6 +70,7 @@ module Gelauto
 
     def logger
       @logger ||= ::Logger.new(STDERR)
+      @logger.level = Logger::DEBUG
     end
 
     private
